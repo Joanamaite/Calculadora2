@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2? family= IM+Fell+Great+Primer+SC & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+
+#calc{
+    width: 500px;
+    padding: 4em;
+    background-color: #030303;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+#calc h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: #850BE5;
+}
+#operacoes{
+    text-align: right;
+}
+#operacaoanterior{
+    color: #850BE5;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+    font-size: 1.5rem;
+}
+#operacaoatual{
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weight: 700;
+    padding: .2em;
+    overflow-wrap: break-word;
+    color: #fff;
+}
+#botao{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    gap: 3%;
+}
+#botao button{
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #850BE5;
+    cursor: pointer;
+}
+#botao .numero{
+    background-color: #f3f3f3;
+}
+#botao button:hover{
+    background-color: #9362b8;
+    border-color: #999;
+}
+
+#botao #result{
+   margin-right: -110%;
+}
+#botao #result:hover{
+
+    background-color: #850BE5;
+}
+
+@media(max-width:480px)
+{
+    #calc{
+        padding: 5em;
+    }
+    #botao button{
+        border: 1px solid transparent;
+        height: 3em;
+        font-size: 1em;
+    }
+    #operacaoanterior{
+    font-size: 0.8rem;
+    }
+    #operacaoatual{
+        font-size: 2em;
+
+    }
+    #calc{
+        padding: 3em;
+    }
+    #calc h3{
+        font-size: 1.2rem;
+    }
+}
+@media(max-width:390px){
+    #calc{
+        padding: 2em;
+    }
+    #calc h3{
+       margin-top: -8%;
+        font-size: 1.2rem;
+     
+    }
+}
+@media(max-width:315px){
+    #calc{
+        padding: 2em;
+    }
+    #botao button{
+
+        height: 2em;
+        font-size: 0.8rem;
+     
+    }
+    #operacaoanterior{
+        font-size: 0.rem;
+        }
+        #operacaoatual{
+            font-size: 1em;
+    
+        }
+        #calc h3{
+            font-size: 1rem;
+        }
+}
+@media(max-width:265px){
+    #botao button{
+        font-size: 0.6rem;
+    }
+}
